@@ -23,7 +23,7 @@ class AlbumTest < ActiveSupport::TestCase
   end
 
   test "No Save if Length not Present" do
-    a = Album.new(title: 'Title', artist: 'Artist', genre: 'Genre', length: '')
+    a = Album.new(title: 'Title', artist: 'Artist', genre: 'Genre', length: 'a')
     assert_not a.save
   end
 
